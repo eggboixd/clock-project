@@ -7,17 +7,17 @@ Credits to Code Traversal for the initial clock design.
 
 
 ### How to pull from this repo
-> git remote add origin https://github.com/eggboixd/clock-project.git
-> git pull origin main
+- git remote add origin https://github.com/eggboixd/clock-project.git
+- git pull origin main
 
 
 
 ### How to push to this repo
-git init
-git remote add origin https://github.com/eggboixd/clock-project.git
-git add .
-git commit -m "ur message type anything here idc"
-git push -u origin main
+-git init
+-git remote add origin https://github.com/eggboixd/clock-project.git
+-git add .
+-git commit -m "ur message type anything here idc"
+-git push -u origin main
 
 
 Learning Resources:
