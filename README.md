@@ -12,12 +12,14 @@ Credits & inspiration are in the Learning Resources section.
 
 
 ### How to pull from this repo
+- open vscode terminal
 - git remote add origin https://github.com/eggboixd/clock-project.git
 - git pull origin main
 
 
 
 ### How to push to this repo
+- open vscode terminal
 - git init
 - git remote add origin https://github.com/eggboixd/clock-project.git
 - git add .
