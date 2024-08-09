@@ -1,7 +1,11 @@
 
 # Clock Project
 
-https://github.com/user-attachments/assets/ae2a9e04-d856-4510-8af3-3adfb1881d87
+
+
+https://github.com/user-attachments/assets/c9382fa6-2169-457a-92f0-e10e8909a162
+
+
 
 Credits to Code Traversal for the initial clock design.
 
@@ -20,7 +24,7 @@ Credits to Code Traversal for the initial clock design.
 - git push -u origin main
 
 
-Learning Resources:
+### Learning Resources:
 - https://www.youtube.com/watch?v=uHVPAcaW1VQ (timer)
 - https://www.youtube.com/watch?v=4ul3q-cEhvU&t=19s (clock)
 - https://www.youtube.com/watch?v=lJ5uJNc7K_o (navbar ui)
