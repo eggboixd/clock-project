@@ -7,8 +7,8 @@ Credits to Code Traversal for the initial clock design.
 
 
 ### How to pull from this repo
---> git remote add origin https://github.com/eggboixd/clock-project.git
---> git pull origin main
+-> git remote add origin https://github.com/eggboixd/clock-project.git
+-> git pull origin main
 
 
 
