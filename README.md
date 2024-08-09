@@ -1,13 +1,14 @@
 
-# Clock Project
+# Clock Project for Schematics BST by Fadhil Revinno Hairiman
 
+A simple clock web-app that has the features for a clock that shows different timezones, timer, and stopwatch. A great starting project for learning the fundamentals of HTML, CSS, and Javascript.
 
 
 https://github.com/user-attachments/assets/c9382fa6-2169-457a-92f0-e10e8909a162
 
 
 
-Credits to Code Traversal for the initial clock design.
+Credits & inspiration are in the Learning Resources section.
 
 
 ### How to pull from this repo
