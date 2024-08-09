@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('/fonts/digital-7.ttf');
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+/*global*/
+body {
+    margin: 0;
+    padding: 0;
+    color: #e0e1dd; 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*animation*/
+    background-color: #333533; 
+    background: linear-gradient(45deg, #57602d, #895818, #036d9a);
+    background-size: 400% 400%; 
+    animation: gradientAnimation 10s ease infinite; 
+}
+
+/*navbar*/
+.kukoologo{
+    width: 80px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+header {
+    position: absolute;
+    top: 10%;
+    width: 90%; 
+    max-width: 600px; 
+    height: 3.75rem; 
+    background: #242423;
+    border-radius: 1.875rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: top 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem; 
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.125rem;
+    color: #CFDBD5;
+    font-weight: 500;
+    margin: 0 2rem; 
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-title {
+    font-size: 15px;
+    margin: 0;
+    position: absolute;
+    top: 18%; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CFDBD5;
+}
+
+.kukoo-logo {
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    top: 3%; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CFDBD5;
+}
+
+.header-elements .kukoo-logo {
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    top: 5%; 
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CFDBD5;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+    background: #F5CB5C;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/*timer style*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: orange;
+    margin-top: 2%;
+}
+
+.circle-container {
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+}
+
+.semicircle {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+}
+
+.semicircle:nth-child(1){
+    background-color: #F5CB5C;
+    z-index: 2;
+}
+
+.semicircle:nth-child(2){
+    background-color: #F5CB5C;
+    z-index: 3;
+}
+
+.semicircle:nth-child(3){
+    background-color: #ddd;
+    z-index: 4;
+    display: none;
+}
+
+.outermost-circle {
+    width: 480px;
+    height: 480px;
+    background-color: #242423;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+/*
+.main-container:hover .semicircle:nth-child(1){
+    transform: rotate(180deg);
+    transition: 1s linear;
+}
+
+.main-container:hover .semicircle:nth-child(2){
+    transform: rotate(360deg);
+    transition: 1s linear;
+}
+
+.main-container:hover .semicircle:nth-child(3){
+    opacity: 0;
+    transition: opacity 0s 1s;
+}*/
+
+
+.timer-container {
+    width: 330px;
+    height: 200px;
+    z-index: 6;
+}
+
+.timer {
+    height: 400px;
+    height: 100px;
+    z-index: 7;
+}
+
+.timer div {
+    font-size: 70px;
+    font-weight: 100;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px;
+}
+
+.timer .colon {
+    background-color: transparent;
+    width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+
+
+
+.input-container {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    z-index: 1;
+    top: 50.8%;
+    margin-top: 8%;
+}
+
+.input-container input {
+    width: 70px;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid #1b263b;
+    border-radius: 5px;
+    background-color: #242423;
+    color: #ffffff;
+}
+
+.input-container button {
+    padding: 5px 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b263b;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+
+.input-container button:hover {
+    background-color: #0d1b2a;
+}
+
+
+
+
+
+
+.button-container {
+    width: 100px;
+    height: 42px;
+    position: absolute;
+    top: 40.8%;
+    text-align: center;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.button-container button {
+    width: 100px;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid #1b263b;
+    border-radius: 5px;
+    background-color: #242423;
+    color: #ffffff;
+}
+
+.button-container button:hover {
+    background-color: rgb(85, 91, 98);
+}
+
+.timer-ui {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    margin-top: 26%;
+}

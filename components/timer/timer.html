@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/components/timer/timer-style.css"> 
+    <link rel="stylesheet2" href="/style.css"> 
     <link rel="icon" href="/assets/kukoo-logo.svg"> 
     <title>Kukoo</title>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="navbar">
-            <a href="/index.html">CLOCK</a>
-            <a href="/timer.html">TIMER</a>
-            <a href="/stopwatch.html">STOPWATCH</a>
+            <a href="/components/clock/clock.html">CLOCK</a>
+            <a href="/components/timer/timer.html">TIMER</a>
+            <a href="/components/stopwatch/stopwatch.html">STOPWATCH</a>
         </nav>
     </header>
 
@@ -22,9 +23,40 @@
     </div>
 
     <div class="clock-title">
-        <h1>STOPWATCH</h1>
+        <h1>TIMER</h1>
     </div>
 
+
+    <div class="timer-ui center">
+        <div class="button-container center">
+            <button id="start-timer">Start</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    
+        <div class="input-container center">
+            <input type="number" id="hours-input" placeholder="HH" min="0" max="23">
+            <input type="number" id="minutes-input" placeholder="MM" min="0" max="59">
+            <input type="number" id="seconds-input" placeholder="SS" min="0" max="59">
+        </div>
+    </div>
+    
+
+    <div class="main-container center">
+        <div class="circle-container center">
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outermost-circle"></div>
+        </div>
+
+        <div class="timer-container center">
+            <div class="timer center"></div>
+        </div>
+    </div>
+
+    
+
+    <!--
     <div class="container">
         <div class="clock">
             <div class="digital-clock" id="digital-clock">12:00:00</div>
@@ -51,11 +83,11 @@
             <span style="--i: 11"><b>11</b></span>
             <span style="--i: 12"><b>12</b></span>
         </div>
-
-    </div>
+        
+    </div>-->
 
     
     
-    <script src="script.js"></script>
+    <script src="timer-script.js"></script>
 </body>
 </html>

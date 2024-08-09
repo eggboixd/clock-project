@@ -1,0 +1,110 @@
+/*analog clock*/
+.container {
+    position: relative;
+    color: #fff;
+    margin-top: 7%;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #242423; 
+    border: 2px solid #F5CB5C;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #f5cb5c;
+}
+
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 20px;
+    text-align: center;
+}
+
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 30px;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i {
+    position: absolute;
+    background-color: var(--clr);
+    width: 6px;
+    height: var(--h);
+    border-radius: 8px;
+}
+
+/*hand lengths*/
+#hour {
+    --h: 170px;
+}
+
+#min {
+    --h: 220px;
+}
+
+#sec {
+    --h: 240px;
+}
+
+/*digital clock*/
+.digital-clock {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem; 
+    color: #f5cb5c;
+    z-index: 0; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    text-align: center; 
+    font-family: digital-clock-font; 
+}
+
+
+
+.timezone-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #e0e1dd; 
+    border-radius: 50%;
+}
+
+#timezone-select {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 12px; 
+    border: 1px solid #F5CB5C; 
+    background-color: #242423;
+    color: #CFDBD5; 
+    /*appearance: none;*/
+    cursor: pointer;
+    position: relative; 
+}

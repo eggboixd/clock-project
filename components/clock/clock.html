@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/style.css"> 
+    <link rel="stylesheet" href="/components/clock/clock-style.css">
     <link rel="icon" href="/assets/kukoo-logo.svg"> 
     <title>Kukoo</title>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="navbar">
-            <a href="/index.html">CLOCK</a>
-            <a href="/timer.html">TIMER</a>
-            <a href="/stopwatch.html">STOPWATCH</a>
+            <a href="/components/clock/clock.html">CLOCK</a>
+            <a href="/components/timer/timer.html">TIMER</a>
+            <a href="/components/stopwatch/stopwatch.html">STOPWATCH</a>
         </nav>
     </header>
 
@@ -22,9 +23,9 @@
     </div>
 
     <div class="clock-title">
-        <h1>TIMER</h1>
+        <h1>CLOCK</h1>
     </div>
-
+    
     <div class="container">
         <div class="clock">
             <div class="digital-clock" id="digital-clock">12:00:00</div>
@@ -52,10 +53,20 @@
             <span style="--i: 12"><b>12</b></span>
         </div>
 
+        <div class="timezone-container">
+            <label for="timezone-select">Select Time Zone:</label>
+            <select id="timezone-select">
+                <option value="">Local Time</option>
+                <option value="Asia/Jakarta">Jakarta</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <option value="America/New_York">New York</option>
+                <option value="Europe/London">London</option>
+            </select>
+        </div>
     </div>
 
     
     
-    <script src="script.js"></script>
+    <script src="/components/clock/clock-script.js"></script>
 </body>
 </html>
