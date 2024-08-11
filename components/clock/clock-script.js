@@ -21,7 +21,7 @@ function displayTime() {
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
-            hour12: false // Ensure 24-hour format
+            hour12: false 
         };
 
         let timeString = new Intl.DateTimeFormat('en-US', options).format(date);
@@ -44,13 +44,13 @@ function displayTime() {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: false // Ensure 24-hour format
+        hour12: false 
     }).format(date) : new Intl.DateTimeFormat('en-US', {
         timeZone: timeZone,
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: false // Ensure 24-hour format
+        hour12: false 
     }).format(date);
 
     digitalClock.textContent = formattedTime;

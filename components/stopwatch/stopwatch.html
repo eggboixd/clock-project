@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css"> 
-    <link rel="stylesheet2" href="stopwatch-style.css"> 
+    <link rel="stylesheet" href="/components/stopwatch/stopwatch-style.css"> 
     <link rel="icon" href="../../asset/kukoo-logo.svg"> 
     <title>Kukoo</title>
 </head>
@@ -26,37 +26,16 @@
         <h1>STOPWATCH</h1>
     </div>
 
-    <div class="container">
-        <div class="clock">
-            <div class="digital-clock" id="digital-clock">12:00:00</div>
-            <div style="--clr: #ff3d58; --h: 120px" id="hour" class="hand"> 
-                <i></i>
-            </div>
-            <div style="--clr: #00a6ff; --h: 160px" id="min" class="hand"> 
-                <i></i>
-            </div>
-            <div style="--clr: #ffffff; --h: 200px" id="sec" class="hand"> 
-                <i></i>
-            </div>
-
-            <span style="--i: 1"><b>1</b></span>
-            <span style="--i: 2"><b>2</b></span>
-            <span style="--i: 3"><b>3</b></span>
-            <span style="--i: 4"><b>4</b></span>
-            <span style="--i: 5"><b>5</b></span>
-            <span style="--i: 6"><b>6</b></span>
-            <span style="--i: 7"><b>7</b></span>
-            <span style="--i: 8"><b>8</b></span>
-            <span style="--i: 9"><b>9</b></span>
-            <span style="--i: 10"><b>10</b></span>
-            <span style="--i: 11"><b>11</b></span>
-            <span style="--i: 12"><b>12</b></span>
-        </div>
-
+    <div class="time-container">
+        
+        <div class="time-display">00:00:00</div>
+        <button id = "startBtn" class="timerBtn">Start</button>
+        <button id = "pauseBtn" class="timerBtn">Pause</button>
+        <button id = "resetBtn" class="timerBtn">Reset</button>
     </div>
 
     
     
-    <script src="stopwatch-script.js"></script>
+    <script src="/components/stopwatch/stopwatch-script.js"></script>
 </body>
 </html>

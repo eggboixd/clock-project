@@ -108,3 +108,37 @@
     cursor: pointer;
     position: relative; 
 }
+
+
+/*stopwatch*/
+.timerBtn {
+    width: 160px; 
+    height: 60px; 
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: rgb(46, 46, 46);
+    color: #f5cb5c;;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.time-display {
+    font-size: 150px;
+    color: #f5cb5c;;
+    font-family: digital-clock-font;
+    margin: 20px 20px 10px 20px;
+}
+
+.time-container {
+    text-align: center;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: #242423;
+    height: 300px; 
+    width: 600px; 
+    border-color: #f5cb5c;;
+}
+
+

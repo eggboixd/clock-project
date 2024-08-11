@@ -4,7 +4,6 @@ let timerLoop;
 let futureTime;
 let setTime;
 
-// Initialize timer display when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     resetTimer();
 });
@@ -13,17 +12,14 @@ document.getElementById('start-timer').addEventListener('click', startTimer);
 document.getElementById('reset-timer').addEventListener('click', resetTimer);
 
 function startTimer() {
-    // Clear previous timer loop
     if (timerLoop) {
         cancelAnimationFrame(timerLoop);
     }
 
-    // Get input values
     const hr = parseInt(document.getElementById('hours-input').value) || 0;
     const min = parseInt(document.getElementById('minutes-input').value) || 0;
     const sec = parseInt(document.getElementById('seconds-input').value) || 0;
 
-    // Calculate times
     const hours = hr * 3600000;
     const minutes = min * 60000;
     const seconds = sec * 1000;
@@ -31,23 +27,21 @@ function startTimer() {
     const startTime = Date.now();
     futureTime = startTime + setTime;
 
-    // Reset animation
     resetAnimation();
 
-    // Start the countdown timer
     function countdownTimer() {
         const currTime = Date.now();
         const remainingTime = futureTime - currTime;
         const angle = (remainingTime / setTime) * 360;
 
         if (angle > 180) {
-            semicircles[2].style.display = 'none'; // white semicircle
-            semicircles[0].style.transform = 'rotate(180deg)'; // red semicircle
-            semicircles[1].style.transform = `rotate(${angle}deg)`; // blue semicircle
+            semicircles[2].style.display = 'none'; 
+            semicircles[0].style.transform = 'rotate(180deg)'; 
+            semicircles[1].style.transform = `rotate(${angle}deg)`; 
         } else {
-            semicircles[2].style.display = 'block'; // white semicircle
-            semicircles[0].style.transform = `rotate(${angle}deg)`; // red semicircle
-            semicircles[1].style.transform = `rotate(${angle}deg)`; // blue semicircle
+            semicircles[2].style.display = 'block'; 
+            semicircles[0].style.transform = `rotate(${angle}deg)`; 
+            semicircles[1].style.transform = `rotate(${angle}deg)`; 
         }
 
         // Timer display
@@ -69,7 +63,6 @@ function startTimer() {
             timer.style.color = "red";
         }
 
-        // Stop the timer when it reaches zero
         if (remainingTime <= 0) {
             resetAnimation();
             // Hide semicircles
@@ -86,7 +79,6 @@ function startTimer() {
             `;
             timer.style.color = "lightgray";
         } else {
-            // Request the next frame
             timerLoop = requestAnimationFrame(countdownTimer);
         }
     }
@@ -96,12 +88,10 @@ function startTimer() {
 }
 
 function resetTimer() {
-    // Stop any ongoing timer
     if (timerLoop) {
         cancelAnimationFrame(timerLoop);
     }
 
-    // Reset animation and timer display
     resetAnimation();
     timer.innerHTML = `
     <div>00</div>
@@ -112,14 +102,12 @@ function resetTimer() {
     `;
     timer.style.color = "lightgray";
 
-    // Optionally, you can reset input fields here if needed
     document.getElementById('hours-input').value = '';
     document.getElementById('minutes-input').value = '';
     document.getElementById('seconds-input').value = '';
 }
 
 function resetAnimation() {
-    // Calculate the initial angle based on the input values
     const hr = parseInt(document.getElementById('hours-input').value) || 0;
     const min = parseInt(document.getElementById('minutes-input').value) || 0;
     const sec = parseInt(document.getElementById('seconds-input').value) || 0;
@@ -133,21 +121,20 @@ function resetAnimation() {
     semicircles[1].style.display = 'block';
     semicircles[2].style.display = 'block';
 
-    semicircles[0].style.backgroundColor = ''; // Reset to default
-    semicircles[1].style.backgroundColor = ''; // Reset to default
-    semicircles[2].style.backgroundColor = ''; // Reset to default
+    semicircles[0].style.backgroundColor = ''; 
+    semicircles[1].style.backgroundColor = ''; 
+    semicircles[2].style.backgroundColor = ''; 
     timer.style.color = '';
 
-    // Use a static value for futureTime to simulate resetting the animation
-    const initialAngle = 360; // Full rotation (can be adjusted based on your needs)
+    const initialAngle = 360; 
 
     if (initialAngle > 180) {
-        semicircles[2].style.display = 'none'; // white semicircle
-        semicircles[0].style.transform = 'rotate(180deg)'; // red semicircle
-        semicircles[1].style.transform = `rotate(${initialAngle}deg)`; // blue semicircle
+        semicircles[2].style.display = 'none'; 
+        semicircles[0].style.transform = 'rotate(180deg)'; 
+        semicircles[1].style.transform = `rotate(${initialAngle}deg)`;
     } else {
         semicircles[2].style.display = 'block'; // white semicircle
-        semicircles[0].style.transform = `rotate(${initialAngle}deg)`; // red semicircle
-        semicircles[1].style.transform = `rotate(${initialAngle}deg)`; // blue semicircle
+        semicircles[0].style.transform = `rotate(${initialAngle}deg)`;
+        semicircles[1].style.transform = `rotate(${initialAngle}deg)`; 
     }
 }
