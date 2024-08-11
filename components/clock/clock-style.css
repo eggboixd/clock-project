@@ -8,8 +8,8 @@
 }
 
 .clock {
-    width: 500px;
-    height: 500px;
+    width: 36rem;
+    height: 36rem;
     border-radius: 50%;
     background-color: #242423; 
     border: 2px solid #F5CB5C;
@@ -24,14 +24,14 @@
 .clock span {
     position: absolute;
     transform: rotate(calc(30deg * var(--i)));
-    inset: 20px;
+    inset: 10px;
     text-align: center;
 }
 
 .clock span b {
     transform: rotate(calc(-30deg * var(--i)));
     display: inline-block;
-    font-size: 30px;
+    font-size: 2.2rem;
 }
 
 .clock::before {
@@ -92,6 +92,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    font-size: 1.6rem;
     color: #e0e1dd; 
     border-radius: 50%;
 }
@@ -99,7 +100,7 @@
 #timezone-select {
     margin: 10px;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     border-radius: 12px; 
     border: 1px solid #F5CB5C; 
     background-color: #242423;
@@ -108,6 +109,91 @@
     cursor: pointer;
     position: relative; 
 }
+
+@media (max-width: 1536px) {
+.container {
+    margin-top: 12%;
+}
+.clock {
+    width: 24rem;
+    height: 24rem;
+}
+
+.digital-clock {
+    font-size: 2.6rem;
+}
+
+.clock span {
+    inset: 10px;
+}
+
+.clock span b {
+    font-size: 1.8rem;
+}
+
+#hour {
+    --h: 134px;
+}
+
+#min {
+    --h: 140px;
+}
+
+#sec {
+    --h: 178px;
+}
+
+.timezone-container {
+    font-size: 1.4rem;
+}
+
+#timezone-select {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 1024px) {
+.container {
+    margin-top: 14%;
+}
+.clock {
+    width: 20rem;
+    height: 20rem;
+}
+
+.digital-clock {
+    font-size: 2.4rem;
+}
+
+.clock span {
+    inset: 10px;
+}
+
+.clock span b {
+    font-size: 1.4rem;
+}
+
+#hour {
+    --h: 104px;
+}
+
+#min {
+    --h: 118px;
+}
+
+#sec {
+    --h: 148px;
+}
+
+.timezone-container {
+    font-size: 1.2rem;
+}
+
+#timezone-select {
+    font-size: 1.0rem;
+}
+}
+
 @media (max-width: 768px) {
 .container {
     margin-top: 14%;
