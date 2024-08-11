@@ -34,4 +34,5 @@ Credits & inspiration are in the Learning Resources section.
 ### Learning Resources:
 - https://www.youtube.com/watch?v=uHVPAcaW1VQ (timer)
 - https://www.youtube.com/watch?v=4ul3q-cEhvU&t=19s (clock)
+- https://www.youtube.com/watch?v=8Nsb9cjmOVA (stopwatch)
 - https://www.youtube.com/watch?v=lJ5uJNc7K_o (navbar ui)
