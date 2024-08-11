@@ -1,6 +1,8 @@
 /*analog clock*/
 .container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     color: #fff;
     margin-top: 7%;
 }
@@ -85,8 +87,6 @@
     font-family: digital-clock-font; 
 }
 
-
-
 .timezone-container {
     display:flex;
     flex-direction: column;
@@ -107,4 +107,102 @@
     /*appearance: none;*/
     cursor: pointer;
     position: relative; 
+}
+@media (max-width: 768px) {
+.container {
+    margin-top: 14%;
+}
+.clock {
+    width: 15.6rem;
+    height: 15.6rem;
+}
+
+.digital-clock {
+    font-size: 18px;
+}
+
+.clock span {
+    inset: 10px;
+}
+
+.clock span b {
+    font-size: 14px;
+}
+
+#hour {
+    --h: 74px;
+}
+
+#min {
+    --h: 90px;
+}
+
+#sec {
+    --h: 108px;
+}
+
+.timezone-container {
+    font-size: 1.4rem;
+}
+
+#timezone-select {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 426px) {
+.container {
+    margin-top: 10%;
+}
+.clock {
+    width: 14rem;
+    height: 14rem;
+}
+
+.digital-clock {
+    font-size: 18px;
+}
+
+.clock span {
+    inset: 10px;
+}
+
+.clock span b {
+    font-size: 14px;
+}
+
+#hour {
+    --h: 64px;
+}
+
+#min {
+    --h: 78px;
+}
+
+#sec {
+    --h: 94px;
+}
+
+.timezone-container {
+    font-size: 1.2rem;
+}
+
+#timezone-select {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 321px) {
+.clock {
+    width: 13.6rem;
+    height: 13.6rem;
+}
+
+.timezone-container {
+    font-size: 1rem;
+}
+
+#timezone-select {
+    font-size: .8rem;
+}
 }

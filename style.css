@@ -58,7 +58,7 @@ header {
     top: 10%;
     width: 90%; 
     max-width: 600px; 
-    height: 3.75rem; 
+    height: 3.75rem;
     background: #242423;
     border-radius: 1.875rem; 
     display: flex;
@@ -75,7 +75,7 @@ header {
     font-size: 1.125rem;
     color: #CFDBD5;
     font-weight: 500;
-    margin: 0 2rem; 
+    margin: 0 2rem;
     text-decoration: none;
 }
 
@@ -136,10 +136,75 @@ header {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+header {
+    top: 10%;
+    width: 90%; 
+    max-width: 600px;
+    height: 7.6%;
+}
 
+.navbar a {
+    font-size: 1em;
+    margin: 0 2.2rem;
+}
 
+.kukoologo{
+    width: 2.8rem;
+}
 
+.kukoo-logo {
+    font-size: 1rem;
+    height: 5%; 
+}
 
+.clock-title {
+    font-size: 0.8rem;
+    height: 10%;
+}
+}
+
+@media (max-width: 427px) {
+header {
+    top: 10%;
+    width: 90%; 
+    max-width: 600px;
+    height: 6.5%;
+}
+
+.navbar a {
+    font-size: .8em;
+    margin: 0 1.8rem;
+}
+
+.kukoologo{
+    width: 34px;
+}
+
+.kukoo-logo {
+    font-size: 1rem;
+    height: 5%; 
+}
+
+.clock-title {
+    font-size: 0.6rem;
+    height: 5%;
+}
+}
+
+@media (max-width: 321px) {
+header {
+    top: 10%;
+    width: 90%; 
+    max-width: 600px;
+    height: 6.5%;
+}
+
+.navbar a {
+    font-size: .8em;
+    margin: 0 .8rem;
+}
+}
 
 
 
