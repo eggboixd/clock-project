@@ -3,7 +3,7 @@
 
 A simple clock web-app that has the features for a clock that shows different timezones, timer, and stopwatch. A great starting project for learning the fundamentals of HTML, CSS, and Javascript.
 
-
+Link to website preview : https://clock-project-l1yk.vercel.app/
 
 
 https://github.com/user-attachments/assets/04dea4e8-80bd-4c1b-9b8e-0f039db5f7e6
